@@ -10,7 +10,9 @@ The dataset contains roughly 3 years of data from vehicles that were stopped by 
 
 The main goal of the project was to create a machine learning model that not only predicts the cars that are most likely to have drugs but also ensure fairness across the population of drivers (namely in 3 of the features: sex, ethnicity and race). E.g. women should not be unfairly more searched than men. To ensure fairness, the difference of precision between the classes of these 3 features was kept under 10%.
 
-The first report was made before the model went into production. After the first report the model was deployed in production, on a Heroku server, using a Flask app with 2 endpoints (one to receive the datapoints and one to update information about the received datapoints). Finally, the second report compares the expected behavior described in the first report with the reality obtained in the production run.
+The first report was made before the model went into production. In there I explained my decisions and the steps that I took in order to build the machine learning model.
+After the first report, the model was deployed in production, on a Heroku server, using a Flask app with 2 endpoints (one to receive the datapoints and one to update information about the received datapoints). The production run lasted a week and the production dataset had 10 thousand datapoints. For 5 thousand of those datapoints, we received their labels (if the car had drugs inside or not).
+Finally, the second report compares the expected behavior described in the first report with the reality obtained in the production run (using the 5 thousand labels to assess the performance of the model).
 
 Inside each folder there's a short description of every file. 
 
